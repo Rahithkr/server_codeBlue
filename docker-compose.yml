@@ -16,8 +16,8 @@ services:
       - 5000:5000
     environment:
       PORT: 5000
-      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
-      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+      GOOGLE_CLIENT_ID: 113220250837-5hnd3vup12nk15sq5050pcgfepj32776.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET: 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
       NEXTAUTH_URL: http://localhost:3000
       NEXTAUTH_SECRET: asdadasdasdsad
       JWT_SECRET : abcdefghijklmn
