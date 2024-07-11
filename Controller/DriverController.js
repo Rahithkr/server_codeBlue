@@ -203,7 +203,7 @@ const forgotPassword=async(req,res)=>{
 
   const updateDriverLocation = async (req, res) => {
     const { email, latitude, longitude } = req.body;
-    console.log('21122',latitude,longitude);
+    console.log('211222',latitude,longitude);
    
   
     if (!email || latitude === undefined || longitude === undefined) {
