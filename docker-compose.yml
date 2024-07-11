@@ -28,8 +28,6 @@ services:
       ADMIN_PASSWORD: admin123
       ADMIN_HASHED_PASSWORD: $2a$10$a5ySoUUz699BVbsfX7ZRnOtApsE39Cdy7ApyTFQ0TVJYzgKRRUZaW
       ADMIN_JWT_SECRET: abcdefghijklmn
-      S3_SECRET_KEY: cM5Uy4Q5kViL/MztZQ1ew7VeIMyxR5iVHljaIW6I
-      S3_ACCESS_KEY: AKIA4JZEBI4GTQDEG6XF
       MONGO_URI: mongodb://mongo_db:27017/codeblue
     depends_on:
       - mongo_db
