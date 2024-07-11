@@ -185,7 +185,7 @@ const hashAdminPassword = async () => {
 
 const adminCredentials = {
     email: process.env.ADMIN_EMAIL,
-    hashedPassword: process.env.ADMIN_HASHED_PASSWORD // Hashed password: admin123
+    hashedPassword: '$2a$10$a5ySoUUz699BVbsfX7ZRnOtApsE39Cdy7ApyTFQ0TVJYzgKRRUZaW' // Hashed password: admin123
   };
   
   

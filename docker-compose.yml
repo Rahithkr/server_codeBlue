@@ -24,7 +24,6 @@ services:
       GOOGLE_MAP_API_KEY: AIzaSyCAzgjpFOMCqPpDdaoI-ZPS6ihQygdp0rY
       ADMIN_EMAIL: admin@gmail.com
       ADMIN_PASSWORD: admin123
-      ADMIN_HASHED_PASSWORD: $2a$10$a5ySoUUz699BVbsfX7ZRnOtApsE39Cdy7ApyTFQ0TVJYzgKRRUZaW
       ADMIN_JWT_SECRET: abcdefghijklmn
       MONGO_URI: mongodb://mongo_db:27017/codeblue
     depends_on:
