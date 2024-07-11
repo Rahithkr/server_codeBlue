@@ -16,13 +16,11 @@ services:
       - 5000:5000
     environment:
       PORT: 5000
-      GOOGLE_CLIENT_ID: 113220250837-5hnd3vup12nk15sq5050pcgfepj32776.apps.googleusercontent.com
-      GOOGLE_CLIENT_SECRET: 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
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
       NEXTAUTH_URL: http://localhost:3000
       NEXTAUTH_SECRET: asdadasdasdsad
       JWT_SECRET : abcdefghijklmn
-      FACEBOOK_CLIENT_ID: 975302954387634
-      FACEBOOK_CLIENT_SECRET: 2eee4b42e9c4ddacf3e20cfc0adfac3f
       GOOGLE_MAP_API_KEY: AIzaSyCAzgjpFOMCqPpDdaoI-ZPS6ihQygdp0rY
       ADMIN_EMAIL: admin@gmail.com
       ADMIN_PASSWORD: admin123
