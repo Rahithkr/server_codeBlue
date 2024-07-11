@@ -24,7 +24,8 @@ const io = new Server(httpServer, {
   pingTimeout: 60000,
 
   cors: {
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: 'https://www.codeblue.ltd',
     credentials: true,
     optionSuccessStatus:200
   },
@@ -33,7 +34,8 @@ const io = new Server(httpServer, {
 
 // app.use(cors());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  // origin: 'http://localhost:3000',
+  origin: 'https://www.codeblue.ltd',
   credentials: true,
 }));
 io.on("connection", (socket) => {
