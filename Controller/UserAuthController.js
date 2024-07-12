@@ -251,7 +251,7 @@ const resetPassword=async(req,res)=>{
 const googleSignin=async(req,res,next)=>{
   try {
     const {name,email}=await req.body
-    
+    console.log('google 123');
     
     
     let user = await userCollection.findOne({ email });
@@ -278,7 +278,7 @@ const googleSignin=async(req,res,next)=>{
       message: 'User authenticated successfully.',
       token,
     });
-  
+  console.log("12345 google");
     
   } catch (error) {
     console.error('Error during Google login:', error.message);
