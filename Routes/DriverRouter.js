@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadPath = path.join(__dirname, './Assets/');
+    const uploadPath = path.join(__dirname, '../Assets/img');
     console.log('Upload Path:', uploadPath); // Ensure this path is correct
     cb(null, uploadPath);
   },
