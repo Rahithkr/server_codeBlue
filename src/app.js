@@ -98,10 +98,10 @@ databaseConnection();
 
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'Assets')));
 app.use("/server/driver", driverRoutes);
 app.use("/server/user", userRouter);
 app.use("/server/admin", adminRouter);
-app.use('/server/Assets', express.static(path.join(__dirname, 'Assets')));
 
 app.get("/", (req, res) => {
   res.send("hello");
