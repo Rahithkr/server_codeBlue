@@ -38,6 +38,9 @@ app.use(cors({
   origin: 'https://www.codeblue.ltd',
   credentials: true,
 }));
+
+app.use(express.static(path.join(__dirname, '../', 'public')));
+
 io.on("connection", (socket) => {
 
   let driverSocketId = null;
@@ -98,7 +101,6 @@ databaseConnection();
 
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'Assets')));
 app.use("/server/driver", driverRoutes);
 app.use("/server/user", userRouter);
 app.use("/server/admin", adminRouter);
